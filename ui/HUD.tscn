@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://bhfqwtlcqvpsy"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 80.0
+grow_horizontal = 2
+
+[node name="TopContainer" type="HBoxContainer" parent="TopPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeftInfo" type="VBoxContainer" parent="TopPanel/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WaveLabel" type="Label" parent="TopPanel/TopContainer/LeftInfo"]
+layout_mode = 2
+text = "Wave: 1/10"
+
+[node name="EnemiesLabel" type="Label" parent="TopPanel/TopContainer/LeftInfo"]
+layout_mode = 2
+text = "Enemies: 0"
+
+[node name="RightInfo" type="VBoxContainer" parent="TopPanel/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MoneyLabel" type="Label" parent="TopPanel/TopContainer/RightInfo"]
+layout_mode = 2
+horizontal_alignment = 2
+text = "Money: $500"
+
+[node name="LivesLabel" type="Label" parent="TopPanel/TopContainer/RightInfo"]
+layout_mode = 2
+horizontal_alignment = 2
+text = "Lives: 20"
+
+[node name="CenterInfo" type="VBoxContainer" parent="TopPanel/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StartWaveButton" type="Button" parent="TopPanel/TopContainer/CenterInfo"]
+layout_mode = 2
+text = "Start Wave"
+
+[node name="PauseButton" type="Button" parent="TopPanel/TopContainer/CenterInfo"]
+layout_mode = 2
+text = "Pause"
+
+[node name="BottomPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TowerContainer" type="HBoxContainer" parent="BottomPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BasicTowerButton" type="Button" parent="BottomPanel/TowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Basic Tower\n$100"
+
+[node name="FastTowerButton" type="Button" parent="BottomPanel/TowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fast Tower\n$150"
+
+[node name="HeavyTowerButton" type="Button" parent="BottomPanel/TowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Heavy Tower\n$200"
+
+[node name="UpgradeButton" type="Button" parent="BottomPanel/TowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Upgrade\n$50"
+
+[node name="SellButton" type="Button" parent="BottomPanel/TowerContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sell Tower\n75% Value"
+
+[node name="GameOverPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -100.0
+offset_right = 200.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOverContainer" type="VBoxContainer" parent="GameOverPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOverLabel" type="Label" parent="GameOverPanel/GameOverContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Game Over"
+
+[node name="ScoreLabel" type="Label" parent="GameOverPanel/GameOverContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Score: 0"
+
+[node name="ButtonContainer" type="HBoxContainer" parent="GameOverPanel/GameOverContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="RestartButton" type="Button" parent="GameOverPanel/GameOverContainer/ButtonContainer"]
+layout_mode = 2
+text = "Restart"
+
+[node name="MainMenuButton" type="Button" parent="GameOverPanel/GameOverContainer/ButtonContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="VictoryPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -100.0
+offset_right = 200.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VictoryContainer" type="VBoxContainer" parent="VictoryPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VictoryLabel" type="Label" parent="VictoryPanel/VictoryContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Victory!"
+
+[node name="FinalScoreLabel" type="Label" parent="VictoryPanel/VictoryContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Final Score: 0"
+
+[node name="VictoryButtonContainer" type="HBoxContainer" parent="VictoryPanel/VictoryContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="PlayAgainButton" type="Button" parent="VictoryPanel/VictoryContainer/VictoryButtonContainer"]
+layout_mode = 2
+text = "Play Again"
+
+[node name="MainMenuButton2" type="Button" parent="VictoryPanel/VictoryContainer/VictoryButtonContainer"]
+layout_mode = 2
+text = "Main Menu"
