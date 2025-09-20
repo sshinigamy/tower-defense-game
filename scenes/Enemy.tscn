@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwj1j2k3l4m5"]
+
+[ext_resource type="Script" path="res://scripts/Enemy.gd" id="1_abc123"]
+[ext_resource type="Texture2D" path="res://assets/enemy_sprite.png" id="2_def456"]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_abc123")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_def456")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20
+offset_top = -30
+offset_right = 20
+offset_bottom = -20
