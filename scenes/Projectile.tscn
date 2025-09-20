@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d7t8u9v0w1x2"]
+
+[ext_resource type="Script" path="res://scripts/Projectile.gd" id="1_mno345"]
+[ext_resource type="Texture2D" path="res://assets/projectile_sprite.png" id="2_pqr678"]
+
+[node name="Projectile" type="CharacterBody2D"]
+script = ExtResource("1_mno345")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_pqr678")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Trail" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(1, 1, 0, 0.8)
