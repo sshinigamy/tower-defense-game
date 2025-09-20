@@ -1,0 +1,115 @@
+{
+  "waves": [
+    {
+      "wave_number": 1,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 5,
+          "spawn_interval": 2.0,
+          "health": 100,
+          "speed": 150,
+          "damage": 10,
+          "reward": 25
+        }
+      ],
+      "delay_before_next": 10.0
+    },
+    {
+      "wave_number": 2,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 8,
+          "spawn_interval": 1.5,
+          "health": 100,
+          "speed": 150,
+          "damage": 10,
+          "reward": 25
+        }
+      ],
+      "delay_before_next": 10.0
+    },
+    {
+      "wave_number": 3,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 6,
+          "spawn_interval": 1.8,
+          "health": 100,
+          "speed": 150,
+          "damage": 10,
+          "reward": 25
+        },
+        {
+          "type": "fast",
+          "count": 3,
+          "spawn_interval": 2.5,
+          "health": 75,
+          "speed": 220,
+          "damage": 8,
+          "reward": 30
+        }
+      ],
+      "delay_before_next": 15.0
+    },
+    {
+      "wave_number": 4,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 10,
+          "spawn_interval": 1.2,
+          "health": 120,
+          "speed": 150,
+          "damage": 12,
+          "reward": 25
+        },
+        {
+          "type": "fast",
+          "count": 4,
+          "spawn_interval": 2.0,
+          "health": 80,
+          "speed": 220,
+          "damage": 10,
+          "reward": 30
+        }
+      ],
+      "delay_before_next": 15.0
+    },
+    {
+      "wave_number": 5,
+      "enemies": [
+        {
+          "type": "basic",
+          "count": 8,
+          "spawn_interval": 1.5,
+          "health": 140,
+          "speed": 150,
+          "damage": 15,
+          "reward": 30
+        },
+        {
+          "type": "fast",
+          "count": 5,
+          "spawn_interval": 1.8,
+          "health": 90,
+          "speed": 220,
+          "damage": 12,
+          "reward": 35
+        },
+        {
+          "type": "tank",
+          "count": 2,
+          "spawn_interval": 4.0,
+          "health": 300,
+          "speed": 80,
+          "damage": 25,
+          "reward": 75
+        }
+      ],
+      "delay_before_next": 20.0
+    }
+  ]
+}
